@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<div class="login_container">
+<div class="Login" >
+    <form action="/myblogs" method="post">
+          <label for="uname"><b>Username :</b></label> <br>
+          <input type="text" placeholder="Enter Username" id="login_text" name="uname" required> <br>
+      
+          <label for="psw"><b>Password:</b></label><br>
+          <input type="text" placeholder="Enter Password"   id="login_text"   name="psw" required><br>
+      
+        <input type="submit" value="Login"> 
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+      </form>
+</div>
+</div>
+<%- include("partials/footer.ejs") %>
